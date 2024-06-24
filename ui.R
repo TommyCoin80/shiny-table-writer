@@ -10,7 +10,7 @@ dashboardPage(
     )
   ),
   dashboardBody(
-    source('www/R/aaTags.R', local=T)[[1]],
+    source('www/R/tags.R', local=T)[[1]],
     tags$head(
       tags$link(rel = "stylesheet", type = "text/css", href = "style.css")
     ),

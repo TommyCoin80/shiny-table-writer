@@ -9,12 +9,12 @@ server <- function(input, output, session) {
 
     # add the spinner to the box to preven interaction
     add_spinner <- function() {
-        shinyjs::runjs("aaFuncs.addSpinner($('#tw_box > .box'))")
+        shinyjs::runjs("jsFuncs.addSpinner($('#tw_box > .box'))")
     }
 
     # remove the spinner from the box to allow interaction
     remove_spinner <- function() {
-        shinyjs::runjs("aaFuncs.removeSpinner($('#tw_box > .box'))")
+        shinyjs::runjs("jsFuncs.removeSpinner($('#tw_box > .box'))")
     }
 
     # a reactive vector of the avialable table names in the DB
